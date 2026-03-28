@@ -4,6 +4,7 @@ import { motion } from 'framer-motion';
 import StaggerText from '../StaggerText';
 import PremiumButton from '../PremiumButton';
 import { Sparkles, Zap } from 'lucide-react';
+import Spline from '@splinetool/react-spline';
 
 export default function HeroSection() {
   return (
@@ -45,7 +46,7 @@ export default function HeroSection() {
           initial={{ opacity: 0, y: -20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
-          className="flex items-center justify-start gap-2 mb-6"
+          className="flex items-center justify-center gap-2 mb-6"
         >
           <Sparkles className="w-5 h-5 text-amber-400" />
           <span className="text-amber-400 font-semibold text-sm tracking-widest uppercase">
@@ -59,7 +60,7 @@ export default function HeroSection() {
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ duration: 1, delay: 0.2 }}
-          className="text-6xl md:text-7xl lg:text-8xl font-black mb-6 text-left text-balance"
+          className="text-6xl md:text-7xl lg:text-8xl font-black mb-6 text-center text-balance"
         >
           <StaggerText
             text="EchoCore"
@@ -73,7 +74,7 @@ export default function HeroSection() {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.6 }}
-          className="text-xl md:text-2xl text-gray-300 text-left mb-12 max-w-2xl text-pretty"
+          className="text-xl md:text-2xl text-gray-300 text-center mb-12 max-w-2xl mx-auto text-pretty"
         >
           Build the Future. One Hack at a Time.
         </motion.p>
@@ -83,7 +84,7 @@ export default function HeroSection() {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.8 }}
-          className="flex flex-col sm:flex-row gap-4 justify-start items-center"
+          className="flex flex-col sm:flex-row gap-4 justify-center items-center"
         >
           <PremiumButton
             variant="primary"
